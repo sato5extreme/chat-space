@@ -1,24 +1,35 @@
-# README
+DB設計
+## ユーザー登録
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+|Column|Type|Options|
+|------|----|-------|
+|id|BIGINT|auto in|
+|name|VARCHAR|null: false, foreign_key: true|
+|e-mail|VARCHAR|null: false, foreign_key: true|
+|password|VARCHAR|null: false|
 
-Things you may want to cover:
+### Association
+- belongs_to :group
+- belongs_to :user
 
-* Ruby version
 
-* System dependencies
+## 投稿機能
+|Column|Type|Options|
+|------|----|-------|
+|text|text|null: false|
+|image|TEXT||
+|create_at|DATETIME||
+|update_at|DATETIME||
 
-* Configuration
+### Association
+- belongs_to :group
+- belongs_to :user
 
-* Database creation
+## グループ管理
+|Column|Type|Options|
+|------|----|-------|
+|
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :tweets
+- belongs_to :user
