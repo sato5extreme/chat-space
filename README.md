@@ -18,7 +18,7 @@
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text||
 |image|text||
 |create_at|integer||
 |update_at|integer||
@@ -33,7 +33,6 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|menmber|string||
 
 ### Association
 - has_many :messages
