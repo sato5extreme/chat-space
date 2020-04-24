@@ -1,4 +1,6 @@
-DB設計
+
+# DB設計
+
 ## ユーザー登録
 
 |Column|Type|Options|
@@ -11,7 +13,6 @@ DB設計
 ### Association
 - belongs_to :group
 - belongs_to :user
-
 
 ## 投稿機能
 |Column|Type|Options|
