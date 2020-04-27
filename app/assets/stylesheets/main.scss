@@ -1,0 +1,136 @@
+.main-contets {
+  background-color: #ffffff;
+  height: 100vh;
+  width: calc(100vw - 300px);
+}
+  .main-header {
+    background-color: #ffffff;
+    height: 100px;
+    width: calc(100vw - 300px);
+    display: flex;
+    justify-content: space-between;
+    .group-title{
+      padding-top: 35px;
+      padding-left: 40px;
+    }
+    .group-name{
+      color: #333333;
+      font-size: 20px;
+    }
+    .group-member{
+      color: #999999;
+      font-size: 12px;
+      padding-top: 15px;
+    }
+    .edit-btn{
+      color: #38aef0;
+      font-size: 16px;
+      width: 72px;
+      height: 40px;
+      line-height: 40px;
+      padding-top: 28px;
+      padding-right: 40px;
+    }
+  }
+
+  .main-messages {
+    background-color: #fafafa;
+    height: calc(100vh - 100px - 90px);
+    width: calc(100vw - 300px);
+
+    .message-1{
+      padding-top: 35px;
+      padding-left: 40px;
+      .message-1-status{
+        display: flex;
+      }
+      .message-1-name{
+        font-size: 16px;
+        color: #333333;
+        float: left;
+      }
+      .message-1-date{
+        font-size: 12px;
+        color: #999999;
+      }
+      .message-1-message{
+        font-size: 14px;
+        color: #434A54;
+        padding-top: 12px;
+      }
+    }
+
+    .message-2{
+      padding-top: 46px;
+      padding-left: 40px;
+      .message-2-status{
+        display: flex;
+      }
+      .message-2-name{
+        font-size: 16px;
+        color: #333333;
+        float: left;
+      }
+      .message-2-date{
+        font-size: 12px;
+        color: #999999;
+      }
+      .message-2-message{
+        font-size: 14px;
+        color: #434A54;
+        padding-top: 12px;
+      }
+    }
+  }
+
+
+  .main-form {
+    background-color: #d2d2d2;
+    height: 90px;
+    width: calc(100vw - 300px);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-end;
+
+
+    .form-area{
+      background-color:blue;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+
+      .form-box{
+        background-color: #ffffff;
+        width: 100%;
+        height: 50px;
+        padding: 0 40px 0 10px
+      }
+
+      .form-image{
+        height: 30px;
+        width: 22px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        input{
+        display: none;
+        }
+        i{
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .form-send-btn{
+      background-color: #38aef0;
+      color: #ffffff;
+      font-size: 15px;
+      height: 50px;
+      width: 100px;
+      margin-left: 15px;
+      text-align: center;
+      line-height: 50px;
+    }
+  }
