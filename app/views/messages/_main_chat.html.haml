@@ -1,0 +1,27 @@
+.main-contents
+  .main-header
+    .group-title
+      .group-name グループ名
+      .group-member Menber：お名前 
+    = link_to "Edit","#", class:"edit-btn"
+  .main-messages
+    .message-1
+      .messages-1-status
+        .message-1-name お名前
+        .message-1-date 2020/4/27/11:45
+      .message-1-message おはよう
+    .message-2
+      .message-2-status
+        .message-2-name お名前
+        .message-2-date 2020/4/27/14:45
+      .message-2-message こんにちは
+  .main-form
+    .form-area
+      %input.form-box{name: "message", placeholder: "type a message", type: "text", value: ""}
+      %label{class: "form-image"}
+        = icon('fas', 'image')
+        %input{type: "file"}
+    = link_to "send","#", class:"form-send-btn"
+
+
+
