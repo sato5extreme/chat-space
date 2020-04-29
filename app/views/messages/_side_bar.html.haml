@@ -1,15 +1,20 @@
 .side-contents
   .side-header
     .user-status
-      .user-name お名前
+      .user-name 
+        =current_user.name
       .user-system-btns
         .group-new-btn
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('far', 'edit')
         .user-edit-btn
-          = link_to "#" do
+          = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
   .side-groups
-    .side-group-list
-      .side-group-name グループ名
-      .side-new-message 最新のメッセージ
+    - current_user.groups.each do |group|
+      .side-group-list
+        = link_to '#' do
+          .side-group-name
+            = group.name
+          .side-new-message
+            メッセージはありません
