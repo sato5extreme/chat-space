@@ -2,8 +2,8 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       var html =
-       `<div class="message">
-          <div class="upper-message" data-message-id=${message.id}>
+       `<div class="message" data-message-id=${message.id}>
+          <div class="upper-message" >
             <div class="upper-message__user-name">
               ${message.user_name}
             </div>
@@ -63,7 +63,7 @@ $(function(){
     });
     };
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-      setInterval(reloadMessages, 4000);
+      setInterval(reloadMessages, 7000);
     }
   
   $('#new_message').on('submit', function(e){
