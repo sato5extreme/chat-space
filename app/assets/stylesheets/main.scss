@@ -9,6 +9,7 @@
     width: calc(100vw - 300px);
     display: flex;
     justify-content: space-between;
+    padding-right: 40px;
     .group-title{
       padding-top: 35px;
       padding-left: 40px;
@@ -25,11 +26,12 @@
     .edit-btn{
       color: #38aef0;
       font-size: 16px;
-      width: 72px;
       height: 40px;
       line-height: 40px;
-      padding-top: 28px;
-      padding-right: 40px;
+      border: solid 1px #38aef0;
+      padding: 0 20px;
+      right: 40px;
+      margin-top: 30px;
     }
   }
 
